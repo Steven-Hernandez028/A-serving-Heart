@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poiret+One&display=swap");
+
+@mixin layaout_home($wh, $ht) {
+  width: $wh;
+  height: $ht;
+}
+
+.home_menu {
+  @include layaout_home(100vw, 10%);
+  max-width: 100%;
+  position: relative;
+  background: #5a3a3a96;
+  display: flex;
+  justify-content: space-between;
+
+  .home_menu_logo_wrapper {
+    @include layaout_home(20%, 100%);
+    display: flex;
+    flex-direction: row;
+
+    h3 {
+      align-self: center;
+      margin-left: 20px;
+      text-align: center;
+      font-size: 1.9em;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: rgb(254, 255, 240);
+      transition: all 1s ease-in;
+
+      &:hover {
+        color: bisque;
+      }
+    }
+  }
+
+  .home_logo {
+    @include layaout_home(75px, 75px);
+    margin-left: 10px;
+  }
+
+  .home_menu_links {
+    @include layaout_home(650px, 100%);
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: #faf4e7;
+      text-decoration: none;
+      font-size: 1.5em;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      transition: transform 0.3s ease-in;
+
+      &:hover {
+        transform: translate(10%);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 2560px) {
+
+
+  .home_menu {
+    .home_logo {
+      @include layaout_home(85px, 85px);
+      margin-left: 10px;
+    }
+
+
+    .home_menu_links{
+      @include layaout_home(850px, 100%);
+      margin-right: 25px;
+      a{
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px){
+
+  .home_menu{
+
+    .home_menu_links{
+      @include layaout_home(550px,100% );
+      margin-right: 15px;
+
+      a{
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 1600px){
+
+  .home_menu{
+
+    .home_menu_links{
+        @include layaout_home(650px, 100%);
+      a{
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1024px){
+  .home_menu{
+    .home_logo{
+      @include layaout_home(70px,70px );
+    }
+    .home_menu_logo_wrapper{
+      width:300px;
+    }
+    .home_menu_links{
+      @include layaout_home(500px,100% );
+      margin-right: 15px;
+
+      a{
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width:912px){
+
+  .home_menu{
+    height: 10%;
+    .home_logo{
+      @include layaout_home(130px,130px);
+    }
+  }
+
+ 
+
+}
+
+
+
+@media only screen and (max-width:900px){
+  .home_menu_links a {
+    display: none;
+  }
+  .home_menu{
+    height: 10%;
+    .home_logo{
+      @include layaout_home(110px,110px);
+    }
+  }
+  .home_menu_logo_wrapper{
+    position: absolute;
+    left: 45%;
+      top:10px;
+    h3{
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .home_menu_links a {
+    display: none;
+  }
+
+  .home_menu{
+    height: 12%;
+    .home_logo{
+      @include layaout_home(110px,100px);
+    }
+  }
+
+  .home_menu_logo_wrapper{
+    position: absolute;
+    left: 45%;
+      top:10px;
+    h3{
+      display: none;
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 540px){
+ 
+  .home_menu {
+    @include layaout_home(100%,15% )
+  
+  }
+  .home_menu_logo_wrapper{
+    left: 39%;
+      top:2px;
+  
+  }
+}
+@media only screen and (max-width: 414px){
+  .home_menu{
+    @include layaout_home(100%,12%);
+  }
+  .home_menu_logo_wrapper{
+    left: 39%;
+      top:8px;
+  
+  }
+}
+
+
+@media only screen and (max-width: 390px){
+
+  .home_menu_logo_wrapper{
+    left: 36%;
+      top:0px;
+  }
+}
+@media only screen and (max-width: 375px){
+  .home_menu_logo_wrapper{
+    left: 37%;
+      top:0px;
+  
+  }
+
+  .home_menu{
+    .home_logo{
+      @include layaout_home(90px,90px);
+    }
+  }
+}
