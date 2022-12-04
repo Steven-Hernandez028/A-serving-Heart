@@ -127,24 +127,32 @@ li {
 
 @media only screen and (max-width: 768px) {
   nav {
-    top:2%;
+    top:1%;
     left: 75%;
   }
   .navbar {
-    top: -0px;
+    top:0px;
     left:99px;
     bottom: 0;
     width: 310px;
-    height: 1040px;
+    height: 1540px;
     background: #bd170b;
   }
 
   li {
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 }
-
+@media only screen and (max-width: 545px){
+  nav{
+    top:1%;
+    left:68%;
+  }
+  .navbar{
+    height: 1560px;
+  }
+}
 @media only screen and (max-width: 540px){
   nav {
     top:2%;

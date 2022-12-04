@@ -65,6 +65,8 @@
 
 
   .home_menu {
+    @include layaout_home(100vw, 8%);
+
     .home_logo {
       @include layaout_home(85px, 85px);
       margin-left: 10px;
@@ -84,7 +86,10 @@
 @media only screen and (max-width: 1440px){
 
   .home_menu{
-
+    @include layaout_home(100vw, 8%);
+    .home_logo{
+      @include layaout_home(120px,120px );
+          }
     .home_menu_links{
       @include layaout_home(550px,100% );
       margin-right: 15px;
@@ -101,7 +106,7 @@
 @media only screen and (max-width: 1600px){
 
   .home_menu{
-
+    @include layaout_home(100vw, 8%);
     .home_menu_links{
         @include layaout_home(650px, 100%);
       a{
@@ -115,7 +120,8 @@
 @media only screen and (max-width: 1024px){
   .home_menu{
     .home_logo{
-      @include layaout_home(70px,70px );
+      @include layaout_home(120px,120px );
+      
     }
     .home_menu_logo_wrapper{
       width:300px;
@@ -173,20 +179,22 @@
   }
 
   .home_menu{
-    height: 12%;
+    @include layaout_home(100%,9% );
     .home_logo{
-      @include layaout_home(110px,100px);
+      @include layaout_home(120px,110px);
     }
   }
 
   .home_menu_logo_wrapper{
     position: absolute;
     left: 45%;
-      top:10px;
+      top:15%;
     h3{
       display: none;
     }
   }
+
+  
 }
 
 
@@ -203,14 +211,25 @@
       top:2px;
   
   }
+  
 }
+
+
+// @media only screen and (max-width: 425px){
+
+//   .home_menu{
+//     @include layaout_home(100%,8% );
+//   }
+// }
+
+
 @media only screen and (max-width: 414px){
   .home_menu{
     @include layaout_home(100%,12%);
   }
   .home_menu_logo_wrapper{
-    left: 39%;
-      top:8px;
+    left: 35%;
+      top:1px;
   
   }
 }
@@ -224,15 +243,19 @@
   }
 }
 @media only screen and (max-width: 375px){
+  
+  .home_menu{
+    height: 80px;
+  }
   .home_menu_logo_wrapper{
     left: 37%;
       top:0px;
   
-  }
+   }
 
   .home_menu{
     .home_logo{
-      @include layaout_home(90px,90px);
+      @include layaout_home(80px,80px);
     }
   }
 }

@@ -22,12 +22,8 @@ const variants = {
 };
 
 
-export const Items = ({ id, text, icon, isOpen }) => {
+export const Items = ({  text, icon, isOpen }) => {
 
-
-
- 
-    
 return (
 
         <motion.li
