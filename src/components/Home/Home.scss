@@ -175,7 +175,7 @@
 //Media screen laptop 1024px
 @media only screen and (max-width: 1024px) {
   .home_wrapper_img {
-    @include layaout_home(150vw, 100vh);
+    @include layaout_home(100vw, 100vh);
   }
   .home {
     overflow: hidden;
