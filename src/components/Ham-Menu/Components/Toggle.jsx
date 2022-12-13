@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import './Toggle.scss';
+import '../styles.scss';
 
 const Path = (props) => (
     <motion.path

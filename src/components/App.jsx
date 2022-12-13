@@ -1,4 +1,5 @@
 import { Home } from "./Home/Home.jsx";
+import { AboutUs } from "./About us/AboutUs.jsx";
 import { Hammenu } from "./Ham-Menu/Hammenu.jsx";
 import './App.scss';
 
@@ -14,16 +15,14 @@ export const App = () => {
     <>
       <div className="page">
 
-      <Hammenu />
+        <Hammenu/>
         <Home />
-          
-
 
 
         <div className="body">
+          <AboutUs/>
 
-          
-        </div> 
+        </div>
 
 
       </div>

@@ -1,6 +1,6 @@
-import logo from '../../media/img/Logo.svg';
+import logo from '../../../media/img/Logo.svg';
 import { ReactSVG } from 'react-svg';
-import './Menu.scss';
+import '../styles.scss';
 
 export const Menu = () => {
 

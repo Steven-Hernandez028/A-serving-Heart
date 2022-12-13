@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect } from "react";
-import './Hammenu.scss';
+import '../styles.scss';
 
 const variants = {
     open: {

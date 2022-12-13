@@ -1,7 +1,7 @@
 import { motion, useCycle } from "framer-motion";
-import { Nav } from "./Nav";
-import { Toggle } from "./Toggle";
-import "./Hammenu.scss";
+import { Nav } from "./Components/Nav";
+import { Toggle } from "./Components/Toggle";
+import './styles.scss';
 
 
 const sidebar = {

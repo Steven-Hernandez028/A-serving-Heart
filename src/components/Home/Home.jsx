@@ -1,9 +1,9 @@
-import { Menu } from './Menu';
+import { Menu } from './components/Menu';
 import { IoChevronDown } from 'react-icons/io5';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import bghome from '../../media/img/header.png';
-import './Home.scss';
+import './styles.scss';
 
 export const Home = () => {
   
@@ -15,7 +15,7 @@ export const Home = () => {
   const { scrollY } = useScroll();
   const object_h1 = useTransform(scrollY, [0, 900], [0, -100]);
   const object_h3 = useTransform(scrollY, [0, 900], [0, -100]);
-  const btn_text = "Ver mas";
+  const btn_text = "Show more";
 
   
 
