@@ -19,7 +19,7 @@ const variants ={
 const items =[
     { id: 0, text: "Home", icon: <AiOutlineHome/> },
     { id: 1, text: "About Us", icon: <AiOutlineExclamationCircle/> },
-    { id: 2, text: "Quieres ser salvo?", icon:<TbCross/> },
+    { id: 2, text: "Come to Christ", icon:<TbCross/> },
     { id: 3, text: "Campaing", icon: <TfiWorld/>},
     { id: 4, text: "FAQ", icon: <AiOutlineQuestion/> },
     { id: 5, text: "Contact", icon: <MdOutlineContactPage/> }
